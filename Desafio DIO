@@ -1,0 +1,123 @@
+# Gerador de relatorios de validação ;)
+
+## 📒 Descrição
+  Gerar relatórios a fim de minimizar tempo para confecção de documentos técnicos para atividade em indústria farmacêutica.
+  "Para criar um modelo inicial py  de um programa de desenvolvimento de relatórios para a indústria farmacêutica, considerando as trilhas de auditoria e a proteção de dados conforme a CFR 21 Parte 11, vou desenvolver um diagrama de classes. Este diagrama incluirá as principais entidades e suas relações, focando nos aspectos de auditoria, segurança e conformidade regulatória."
+
+## 🤖 Tecnologias Utilizadas
+  Foi utilizado Chat GPT para iniciar o esboço do projeto
+
+## 🧐 Processo de Criação
+  Descreva como você criou o conteúdo
+  Dentro do chaGPT eu pedi para ele no seguinte prompit: "Para criar um modelo inicial py  de um programa de desenvolvimento de relatórios para a indústria farmacêutica, considerando as trilhas de auditoria e a proteção de dados conforme a CFR 21 Parte 11, vou desenvolver um diagrama de classes. Este diagrama incluirá as principais entidades e suas relações, focando nos aspectos de auditoria, segurança e conformidade regulatória."
+
+## 🚀 Resultados
+
+  Diagrama de Classes - Descrição
+  Classe Relatório
+  
+  Atributos:
+  id: Identificador único do relatório.
+  título: Título do relatório.
+  data_criação: Data em que o relatório foi criado.
+  autor: Autor do relatório.
+  status: Status atual do relatório (ex: rascunho, revisado, aprovado).
+  Métodos:
+  gerar_relatorio(): Método para gerar o conteúdo do relatório.
+  revisar_relatorio(): Método para revisar o relatório.
+  aprovar_relatorio(): Método para aprovar o relatório.
+  Classe Auditoria
+  
+  Atributos:
+  id: Identificador único do registro de auditoria.
+  ação: Descrição da ação realizada (ex: criação, modificação, exclusão).
+  data_hora: Data e hora da ação.
+  usuário: Usuário que realizou a ação.
+  detalhes: Detalhes adicionais sobre a ação.
+  Métodos:
+  registrar_ação(): Método para registrar uma nova ação de auditoria.
+  Classe Usuário
+  
+  Atributos:
+  id: Identificador único do usuário.
+  nome: Nome do usuário.
+  papel: Papel do usuário (ex: autor, revisor, administrador).
+  credenciais: Informações de autenticação do usuário.
+  Métodos:
+  autenticar(): Método para autenticar o usuário.
+  autorizar(): Método para verificar permissões do usuário.
+  Classe Segurança
+  
+  Atributos:
+  nível_acesso: Nível de acesso necessário para visualizar ou editar o relatório.
+  métodos_encriptação: Métodos utilizados para proteger os dados.
+  Métodos:
+  encriptar_dados(): Método para encriptar dados sensíveis.
+  desencriptar_dados(): Método para desencriptar dados sensíveis.
+  
+  Apresente os resultados do seu projeto
+
+class Relatorio:
+    def __init__(self, id, titulo, data_criacao, autor, status):
+        self.id = id
+        self.titulo = titulo
+        self.data_criacao = data_criacao
+        self.autor = autor
+        self.status = status
+
+    def gerar_relatorio(self):
+        # Lógica para gerar o relatório
+        pass
+
+    def revisar_relatorio(self):
+        # Lógica para revisar o relatório
+        pass
+
+    def aprovar_relatorio(self):
+        # Lógica para aprovar o relatório
+        pass
+
+class Auditoria:
+    def __init__(self, id, acao, data_hora, usuario, detalhes):
+        self.id = id
+        self.acao = acao
+        self.data_hora = data_hora
+        self.usuario = usuario
+        self.detalhes = detalhes
+
+    def registrar_acao(self):
+        # Lógica para registrar uma ação de auditoria
+        pass
+
+class Usuario:
+    def __init__(self, id, nome, papel, credenciais):
+        self.id = id
+        self.nome = nome
+        self.papel = papel
+        self.credenciais = credenciais
+
+    def autenticar(self):
+        # Lógica para autenticar o usuário
+        pass
+
+    def autorizar(self):
+        # Lógica para verificar permissões do usuário
+        pass
+
+class Seguranca:
+    def __init__(self, nivel_acesso, metodos_encriptacao):
+        self.nivel_acesso = nivel_acesso
+        self.metodos_encriptacao = metodos_encriptacao
+
+    def encriptar_dados(self):
+        # Lógica para encriptar dados
+        pass
+
+    def desencriptar_dados(self):
+        # Lógica para desencriptar dados
+        pass
+
+## 💭 Reflexão (Opcional)
+Comente sobre o desafio de criar algo 'natty' com IA.
+
+  muito legal ver como a facilidade de atividades complexas com AI para atividade 
